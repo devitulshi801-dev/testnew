@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name="theme-color" content="#fcad2b">
+	<title>Latest activity · CryptoSpaniards Simulator</title>
+	<meta name="description" content="List of the latest buy and sell orders of cryptocurrencies in the simulator">
+	<meta name="keywords" content="simulador, fantasy, emulador, de mentira, virtual, criptomonedas, bitcoin, ficticio, dinero real, jugar, juego, fantasía, opciones binarias">
+	<meta name="author" content="CryptoSpaniards">
+
+	<link rel="shortcut icon" href="static/app-logo-128-2.png?v=09f45e">
+	<link rel="icon" sizes="16x16" href="static/app-logo-128-2.png?v=09f45e" type="image/png">
+	<link rel="icon" sizes="128x128" href="static/app-logo-128-2.png?v=09f45e" type="image/png">
+
+	<meta name="apple-mobile-web-app-title" content="CryptoSpaniards">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<link href="../font-awesome/latest/css/font-awesome.min-1.css" rel="stylesheet">
+	<link href="../css-1?family=Muli:400,300" rel="stylesheet" type="text/css">
+
+	<link href="static/style-1.css?v=3b3f81" rel="stylesheet">
+
+	<script>
+		var APP = APP || {};
+		APP.config = {
+			url: 'https://cryptospaniards.com/simulator',
+			access_token_cookie_name: 'cryptospaniards_access_token',
+			session_token_duration: 90		};
+		APP.i18n = {
+			takeProfitTooLow: 'Take Profit must be higher than the current value',
+			stopLossTooHigh: 'Stop Loss must be lower than the current value',
+			areYouSure: 'Are you sure?',
+			usernameNotAvailable: 'This username is not available',
+			usernameAvailable: 'Username available!'
+		};
+	</script>
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-108790492-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	
+
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="sidebar" data-background-color="white" data-active-color="danger">
+			<div class="sidebar-wrapper">
+				<div class="logo">
+					<a href="https://cryptospaniards.com/simulator" class="simple-text" title="CryptoSpaniards Simulator"><img src="static/app-logo-128-3.png"><br>CryptoSpaniards <small style="line-height: 1.5em;display: block;">Simulator</small></a>
+				</div>
+
+				<ul class="nav" id="nav-sidebar">
+												<li><a href="login-1.html"><i class="ti-user"></i>
+									<p>Login</p>
+								</a></li>
+														<li><a href="rankings.html"><i class="ti-cup"></i>
+									<p>Top 50</p>
+								</a></li>
+								<li class="active"><a href="activity.html"><i class="ti-signal"></i>
+										<p>Activity</p>
+									</a></li>
+									
+											<li class="active-pro"><a href="https://cryptospaniards.com/forum/" target="_blank"><i class="ti-comment-alt"></i>
+													<p>Forum</p>
+												</a></li>
+											<li class="active-pro"><a href="https://t.me/cryptospaniards" target="_blank" rel="nofollow external"><i class="ti-location-arrow"></i>
+													<p>Telegram</p>
+												</a></li>
+											<li><a href="help.html"><i class="ti-help"></i>
+													<p>Help</p>
+												</a></li>
+												
+												
+				</ul>
+			</div>
+		</div>
+
+		<div class="main-panel">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar bar1"></span>
+							<span class="icon-bar bar2"></span>
+							<span class="icon-bar bar3"></span>
+						</button>
+						<a class="navbar-brand" href="#">Latest activity</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+																				</ul>
+
+					</div>
+				</div>
+			</nav>
+
+			
+			
+			<div class="content">
+				<div class="container-fluid">
+
+					
+<div class="row">
+	<div class="col-lg-12 col-sm-12">
+		<div class="card">
+			<div class="header">
+				<h4 class="title">Activity					<small>
+						<a href="activity.html" style="font-weight:bold">All</a> /
+						<a href="https://cryptospaniards.com/simulator/activity/following">Following</a>
+					</small>
+				</h4>
+				<p class="category">Latest orders</p>
+			</div>
+			<div class="content table-responsive table-full-width">
+
+				<table id="table-activities" class="table table-striped table-activities">
+					<thead>
+						<tr>
+							<th>Investor</th>
+							<th>Action</th>
+							<th>Coin</th>
+							<th class="text-right">Amount</th>
+							<th class="text-right">Value</th>
+							<th class="text-right">Price</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody>
+													<tr>
+																	<td><strong><a href="profile/jimmyq.html">jimmyq</a></strong> <sup>35200</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.003015</td>
+									<td class="text-right">$200.00</td>
+									<td class="text-right">$66,166.79</td>
+																<td>30 minutes in</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/1245winstongb.html">1245winstongb</a></strong> <sup>85213</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.0072</td>
+									<td class="text-right">$477.58</td>
+									<td class="text-right">$66,166.79</td>
+																<td>4 minutes in</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/zack1234.html">zack1234</a></strong> <sup>74857</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">3.31</td>
+									<td class="text-right">$9,999.94</td>
+									<td class="text-right">$3,016.86</td>
+																<td>59 minutes ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/shyguy.html">shyguy</a></strong> <sup>32186</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/bsv.png">&nbsp;BSV</td>
+									<td class="text-right">306.47</td>
+									<td class="text-right">$10.00</td>
+									<td class="text-right">$0.0325</td>
+																<td>1 hour ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/george11.html">george11</a></strong> <sup>62117</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/bsv.png">&nbsp;BSV</td>
+									<td class="text-right">15,078.63</td>
+									<td class="text-right">$492.01</td>
+									<td class="text-right">$0.0325</td>
+																<td>1 hour ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/jeschaid.html">jeschaid</a></strong> <sup>94483</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.0609</td>
+									<td class="text-right">$183.20</td>
+									<td class="text-right">$3,016.86</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/rpreza4.html">rpreza4</a></strong> <sup>77824</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.001508</td>
+									<td class="text-right">$100.00</td>
+									<td class="text-right">$66,166.79</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/theayui.html">theayui</a></strong> <sup>70642</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.0754</td>
+									<td class="text-right">$4,999.97</td>
+									<td class="text-right">$66,166.79</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/170217aa.html">170217aa</a></strong> <sup>72032</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.0007538</td>
+									<td class="text-right">$50.00</td>
+									<td class="text-right">$66,166.79</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/moyak100.html">moyak100</a></strong> <sup>23758</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/bsv.png">&nbsp;BSV</td>
+									<td class="text-right">15,323.50</td>
+									<td class="text-right">$500.00</td>
+									<td class="text-right">$0.0325</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/felix4444.html">felix4444</a></strong> <sup>74859</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">1.51</td>
+									<td class="text-right">$99,999.38</td>
+									<td class="text-right">$66,166.79</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/mariusandreassen.html">mariusandreassen</a></strong> <sup>90216</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.0106</td>
+									<td class="text-right">$700.00</td>
+									<td class="text-right">$66,166.79</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/link.png">&nbsp;LINK</td>
+									<td class="text-right">24.68</td>
+									<td class="text-right">$345.20</td>
+									<td class="text-right">$13.95</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/zrx.png">&nbsp;ZRX</td>
+									<td class="text-right">2,818.98</td>
+									<td class="text-right">$1,445.87</td>
+									<td class="text-right">$0.5142</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/zrx.png">&nbsp;ZRX</td>
+									<td class="text-right">2,819.87</td>
+									<td class="text-right">$1,453.57</td>
+									<td class="text-right">$0.5142</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/zrx.png">&nbsp;ZRX</td>
+									<td class="text-right">2,720.06</td>
+									<td class="text-right">$1,395.13</td>
+									<td class="text-right">$0.5142</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/zrx.png">&nbsp;ZRX</td>
+									<td class="text-right">2,720.09</td>
+									<td class="text-right">$1,402.13</td>
+									<td class="text-right">$0.5142</td>
+																<td>2 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/imamethyst.html">imamethyst</a></strong> <sup>33174</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/etc.png">&nbsp;ETC</td>
+									<td class="text-right">14.59</td>
+									<td class="text-right">$400.00</td>
+									<td class="text-right">$27.34</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/zec.png">&nbsp;ZEC</td>
+									<td class="text-right">0.1995</td>
+									<td class="text-right">$365.44</td>
+									<td class="text-right">$1,827.21</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.0001508</td>
+									<td class="text-right">$10.00</td>
+									<td class="text-right">$66,166.79</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.00000225</td>
+									<td class="text-right">$0.1493</td>
+									<td class="text-right">$66,166.79</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.1503</td>
+									<td class="text-right">$9,920.07</td>
+									<td class="text-right">$66,166.79</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.1503</td>
+									<td class="text-right">$9,968.80</td>
+									<td class="text-right">$66,166.79</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/codingpenguin44.html">codingpenguin44</a></strong> <sup>74856</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.0224</td>
+									<td class="text-right">$67.62</td>
+									<td class="text-right">$3,016.86</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.9975</td>
+									<td class="text-right">$3,001.79</td>
+									<td class="text-right">$3,016.86</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.9975</td>
+									<td class="text-right">$3,016.84</td>
+									<td class="text-right">$3,016.86</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.9972</td>
+									<td class="text-right">$3,000.79</td>
+									<td class="text-right">$3,016.86</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.0003315</td>
+									<td class="text-right">$0.9975</td>
+									<td class="text-right">$3,016.86</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.9975</td>
+									<td class="text-right">$3,016.84</td>
+									<td class="text-right">$3,016.86</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/tylerrg.html">tylerrg</a></strong> <sup>86461</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.00001508</td>
+									<td class="text-right">$1</td>
+									<td class="text-right">$66,166.79</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/khurram.html">khurram</a></strong> <sup>60648</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.0331</td>
+									<td class="text-right">$100.00</td>
+									<td class="text-right">$3,016.86</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/thebaddestbagel.html">thebaddestbagel</a></strong> <sup>15600</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.006613</td>
+									<td class="text-right">$20.00</td>
+									<td class="text-right">$3,016.86</td>
+																<td>3 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/kingen.html">kingen</a></strong> <sup>81502</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/ltc-1.png">&nbsp;LTC</td>
+									<td class="text-right">0.478</td>
+									<td class="text-right">$305.56</td>
+									<td class="text-right">$637.64</td>
+																<td>4 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/kingen.html">kingen</a></strong> <sup>81502</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/eth-1.png">&nbsp;ETH</td>
+									<td class="text-right">0.1015</td>
+									<td class="text-right">$305.56</td>
+									<td class="text-right">$3,016.86</td>
+																<td>4 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/bitcponisgay.html">bitcponisgay</a></strong> <sup>63422</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.0151</td>
+									<td class="text-right">$999.99</td>
+									<td class="text-right">$66,166.79</td>
+																<td>4 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/cyriel12.html">cyriel12</a></strong> <sup>83980</sup></td>
+																									<td class="text-warning">SELL</td>
+									<td><img class="symbol" src="static/coins/xmr.png">&nbsp;XMR</td>
+									<td class="text-right">0.8895</td>
+									<td class="text-right">$119.39</td>
+									<td class="text-right">$134.57</td>
+																<td>4 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/codingpenguin44.html">codingpenguin44</a></strong> <sup>74856</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/btc-1.png">&nbsp;BTC</td>
+									<td class="text-right">0.0006274</td>
+									<td class="text-right">$41.61</td>
+									<td class="text-right">$66,166.79</td>
+																<td>4 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/codingpenguin44.html">codingpenguin44</a></strong> <sup>74856</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/doge.png">&nbsp;DOGE</td>
+									<td class="text-right">5,688.16</td>
+									<td class="text-right">$890.75</td>
+									<td class="text-right">$0.1562</td>
+																<td>4 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/cyriel12.html">cyriel12</a></strong> <sup>83980</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/dcr.png">&nbsp;DCR</td>
+									<td class="text-right">0.9773</td>
+									<td class="text-right">$20.00</td>
+									<td class="text-right">$20.41</td>
+																<td>4 hours ago</td>
+							</tr>
+													<tr>
+																	<td><strong><a href="profile/cyriel12.html">cyriel12</a></strong> <sup>83980</sup></td>
+																									<td class="text-info">BUY</td>
+									<td><img class="symbol" src="static/coins/xmr.png">&nbsp;XMR</td>
+									<td class="text-right">0.8895</td>
+									<td class="text-right">$120.00</td>
+									<td class="text-right">$134.57</td>
+																<td>4 hours ago</td>
+							</tr>
+											</tbody>
+				</table>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+	</div>
+</div>
+
+
+<footer class="footer">
+<div class="container-fluid">
+	<div class="row">
+		<nav class="col-md-6 col-xs-12">
+			<ul>
+				<li><a href="terms.html" rel="nofollow">Terms</a></li>
+				<li><a href="https://cryptospaniards.com/simulator/privacy" rel="nofollow">Privacy</a></li>
+								<li><a href="credits.html" rel="nofollow">Credits</a></li>
+				<li><a href="https://cryptospaniards.com/contacto/" rel="nofollow" target="_blank">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="col-md-6 col-xs-12">
+			<p class="copyright text-right"><i class="fa fa-heart heart"></i> <a href="https://cryptospaniards.com" style="color:inherit">CryptoSpaniards</a> &copy; 2017-2026</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p class="text-center" style="opacity: 0.5;font-size: 13px">
+								Donations:
+				<img class="symbol" src="static/coins/btc-1.png">&nbsp;<b>BTC</b>:&nbsp;<code>19kRXSFHpmDx66GryXQhCWateujH5ETZ7h</code> &nbsp; · &nbsp;
+				<img class="symbol" src="static/coins/eth-1.png">&nbsp;<b>ETH</b>:&nbsp;<code>0xf1df200e1d382b676c63104d6a2d62f330895636</code> &nbsp; · &nbsp;
+				<img class="symbol" src="static/coins/ltc-1.png">&nbsp;<b>LTC</b>:&nbsp;<code>LPqW3yJaXrMZxxvUKWYHTMpF2wy9dD5ffi</code>
+			</p>
+			<p class="text-center" style="opacity: 0.5;font-size: 13px"><small>The content of this simulator is informative in nature, and under no circumstances is it intended to encourage the purchase/sale of financial instruments. Do not invest more money than you can lose. The cryptocurrency market is highly volatile and uncertain.</small></p>
+		</div>
+	</div>
+</div>
+</footer>
+
+</div>
+</div>
+
+
+<script src="static/script-1.js?v=6ef9cc"></script>
+<script type="text/javascript">
+
+	
+	$('img.symbol').on('click', function(){
+		var symbol = $(this).attr('src').match(/\/([a-z]{2,5})\.png/)[1];
+		if ( symbol && symbol !== 'usd' ){
+			document.location.href = APP.config.url + "/trade/usd/" + symbol;
+		}
+	});
+
+	var d = new Date;
+	var secs = 5 + 60 - d.getSeconds();
+	setInterval(function(){
+		if (secs === 0){$('.reload-timer').html('(<a onclick="location.reload()">reload</a>)');return;}
+		secs = secs - 1;
+		$('.reload-timer').html('<small>('+secs+'s)</small>');
+	}, 1000);
+
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-108790492-1', { 'cookieDomain': 'cryptospaniards.com' } );
+	// Plugins
+	ga('require', 'displayfeatures');ga('require', 'ec');ga('require', 'linkid', 'linkid.js');ga('require', 'outboundLinkTracker');
+	ga('send', 'pageview');
+
+
+
+</script>
+
+
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c8adbe3097e8a13',t:'MTc3MDIxNTM1Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer="" src="../beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015-1" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"05ce188d550c4ea28738906cf69ac7c4","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
